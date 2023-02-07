@@ -47,7 +47,8 @@ export const HomeImg = () => {
       transition: {
         duration: 1.5,
         delay,
-        ease: "easeInOut",
+        type: "spring",
+        stiffness: 100,
       },
       initial: {
         opacity: 0,
