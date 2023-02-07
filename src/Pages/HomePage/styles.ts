@@ -33,15 +33,37 @@ export const BoxLeft = styled.div`
   }
 
   @media (min-width: 1024px) {
-    width: 40%;
+    width: 30%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 2rem;
 
-    border: 1px solid green;
+    & > img {
+      width: 40%;
+    }
+
+    & > .box-title {
+      width: 100%;
+
+      & > h2 {
+        font-size: 30pt;
+        font-weight: 900;
+
+        line-height: 2.5rem;
+
+        color: ${(props) => props.theme.txtSecondary};
+      }
+    }
+
+    & > span {
+      font-size: 14pt;
+
+      color: ${(props) => props.theme.txtSecondary};
+    }
   }
 
   @media (min-width: 1440px) {
@@ -65,8 +87,6 @@ export const BoxRigth = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid magenta;
   }
 
   @media (min-width: 1440px) {

@@ -21,6 +21,8 @@ export const GloblaStyle = createGlobalStyle`
       align-items: center;
 
       overflow: hidden auto;
+
+      font-family: "Nunito";
     }
 
     h1, h2, h3, h4 {
