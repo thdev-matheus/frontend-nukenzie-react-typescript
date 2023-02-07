@@ -1,7 +1,12 @@
+import * as S from "./styles";
+
 export const HomePage = () => {
   return (
-    <>
-      <h1>HomePage</h1>
-    </>
+    <S.Container>
+      <S.BoxLeft></S.BoxLeft>
+      <S.BoxRigth>
+        <S.BoxImg></S.BoxImg>
+      </S.BoxRigth>
+    </S.Container>
   );
 };
