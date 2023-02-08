@@ -15,20 +15,17 @@ export const Container = styled.div`
 
 export const BoxLeft = styled.div`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
-    width: 30%;
+    width: 80%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.5rem;
 
     & > img {
-      width: 60%;
+      width: 70%;
     }
 
     & > .box-title {
@@ -37,6 +34,8 @@ export const BoxLeft = styled.div`
       & > h2 {
         font-size: 18pt;
         font-weight: 900;
+
+        text-align: center;
 
         line-height: 2rem;
 
@@ -48,6 +47,23 @@ export const BoxLeft = styled.div`
       font-size: 12pt;
 
       color: ${(props) => props.theme.txtSecondary};
+    }
+  }
+
+  @media (min-width: 767px) {
+    width: 30%;
+
+    align-items: flex-start;
+    gap: 1rem;
+
+    & > img {
+      width: 60%;
+    }
+
+    & > .box-title {
+      & > h2 {
+        text-align: left;
+      }
     }
   }
 
