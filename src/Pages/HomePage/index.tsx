@@ -17,7 +17,7 @@ export const HomePage = () => {
           <h2>finanças</h2>
         </div>
         <span>de forma rápida e segura</span>
-        <C.Button onClick={() => navigate("/dashboard")}>
+        <C.Button onClick={() => navigate("/dashboard")} width="80%">
           Acessar
           <IoIosArrowForward />
         </C.Button>
