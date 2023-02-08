@@ -1,3 +1,4 @@
 import { HomeImg } from "./HomeImg";
+import { Button } from "./Button";
 
-export { HomeImg };
+export { HomeImg, Button };

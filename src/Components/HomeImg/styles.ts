@@ -9,52 +9,6 @@ export const Container = styled.div`
   align-items: center;
 
   position: relative;
-
-  @keyframes grow-shrink {
-    50% {
-      transform: scale(1.05);
-    }
-
-    to {
-      transform: scale(1);
-    }
-  }
-
-  @keyframes fade {
-    25% {
-      opacity: 0.7;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    75% {
-      opacity: 0.7;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes swing {
-    25% {
-      transform: translate(10px, 10px);
-    }
-
-    50% {
-      transform: translate(5px, 7px);
-    }
-
-    75% {
-      transform: translate(7px, 3px);
-    }
-
-    to {
-      transform: translate(0px, 0px);
-    }
-  }
 `;
 
 export const BigCircle = styled(motion.img)`

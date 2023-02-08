@@ -28,5 +28,67 @@ export const GloblaStyle = createGlobalStyle`
     h1, h2, h3, h4 {
       margin-bottom: 0;
     }
+
+    @keyframes grow-shrink {
+      
+    50% {
+      transform: scale(1.05);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade {
+    25% {
+      opacity: 0.7;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 0.7;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes swing {
+    25% {
+      transform: translate(10px, 10px);
+    }
+
+    50% {
+      transform: translate(5px, 7px);
+    }
+
+    75% {
+      transform: translate(7px, 3px);
+    }
+
+    to {
+      transform: translate(0px, 0px);
+    }
+  }
     
+    @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
 `;

@@ -1,6 +1,7 @@
 export const lightTheme = {
   primary: "#fd377e",
-  secondary: "#03b898",
+  secondary: "#a34981",
+  tertiary: "#03b898",
 
   bgPrimary: "#f8f9fa",
   bgSecondary: "#212529",

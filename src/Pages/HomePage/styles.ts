@@ -50,7 +50,7 @@ export const BoxLeft = styled.div`
       width: 100%;
 
       & > h2 {
-        font-size: 30pt;
+        font-size: 25pt;
         font-weight: 900;
 
         line-height: 2.5rem;
