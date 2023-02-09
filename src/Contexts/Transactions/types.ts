@@ -4,6 +4,7 @@ export interface ITransactionsContextData {
   transactions: ITransaction[];
   addTransaction: (transaction: ITransaction) => void;
   removeTransaction: (idTransaction: string) => void;
+  total: number;
 }
 
 export interface ITransaction {

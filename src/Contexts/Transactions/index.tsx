@@ -15,6 +15,7 @@ export const TransactionsProvider = ({
   children,
 }: T.ITransactionsProviderData) => {
   const [transactions, setTransactions] = useState<T.ITransaction[]>([]);
+  const [total, setTotal] = useState<number>(0);
 
   const addTransaction = (transaction: T.ITransaction) => {
     setTransactions([transaction, ...transactions]);
@@ -37,9 +38,17 @@ export const TransactionsProvider = ({
     storedTransactions && setTransactions(JSON.parse(storedTransactions));
   }, []);
 
+  useEffect(() => {
+    if (transactions) {
+      const totalValue = transactions.reduce((acc, t) => acc + t.value, 0);
+
+      setTotal(totalValue);
+    }
+  }, [transactions]);
+
   return (
     <TransactionContext.Provider
-      value={{ transactions, addTransaction, removeTransaction }}
+      value={{ transactions, addTransaction, removeTransaction, total }}
     >
       {children}
     </TransactionContext.Provider>
