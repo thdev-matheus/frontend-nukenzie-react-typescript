@@ -87,6 +87,8 @@ export const BoxBody = styled.div`
     justify-content: center;
     align-items: center;
 
+    padding-top: 2rem;
+
     border: 1px solid cyan;
   }
 
@@ -107,6 +109,11 @@ export const BoxLeft = styled.div`
   @media (min-width: 1024px) {
     width: 50%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     border: 1px solid magenta;
   }

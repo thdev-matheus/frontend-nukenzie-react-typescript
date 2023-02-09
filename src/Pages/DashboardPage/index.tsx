@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import * as C from "../../Components";
+import * as B from "../../Blocks";
 
 import blackLogo from "../../Assets/Images/black-logo.png";
 
@@ -12,7 +13,10 @@ export const DashboardPage = () => {
       </S.BoxHeader>
 
       <S.BoxBody>
-        <S.BoxLeft></S.BoxLeft>
+        <S.BoxLeft>
+          <B.Form />
+          {/* Total */}
+        </S.BoxLeft>
 
         <S.BoxRight></S.BoxRight>
       </S.BoxBody>
