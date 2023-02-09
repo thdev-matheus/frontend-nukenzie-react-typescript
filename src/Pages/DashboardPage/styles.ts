@@ -16,7 +16,7 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
 
-    background-color: ${(props) => props.theme.bgPrimary};
+    background-color: #fff;
   }
 
   @media (min-width: 1440px) {
@@ -34,10 +34,35 @@ export const BoxHeader = styled.header`
   }
 
   @media (min-width: 1024px) {
-    width: 80%;
+    width: 100%;
     height: 5rem;
 
-    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10%;
+
+    background-color: ${(props) => props.theme.bgPrimary};
+
+    box-shadow: 0 2px 5px ${(props) => props.theme.bGray};
+
+    & > img {
+      width: 15%;
+    }
+
+    & > button {
+      width: 10%;
+      height: 2.5rem;
+
+      animation-name: grow-shrink;
+      animation-timing-function: ease-in-out;
+      animation-play-state: paused;
+
+      :hover {
+        animation-play-state: running;
+      }
+    }
   }
 
   @media (min-width: 1440px) {

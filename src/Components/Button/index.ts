@@ -12,11 +12,11 @@ export const Button = styled.button<T.IButtonProps>`
 
   border-radius: ${(props) => props.radius || "0.5rem"};
 
-  font-size: ${(props) => props.fontSize || "14pt"};
+  font-size: ${(props) => props.fontSize || "12pt"};
   font-weight: bold;
 
   background-color: ${(props) =>
-    props.primary === false ? props.theme.bGray : props.theme.primary};
+    props.primary === false ? props.theme.lGray : props.theme.primary};
   color: ${(props) =>
     props.primary === false
       ? props.theme.txtPrimary
