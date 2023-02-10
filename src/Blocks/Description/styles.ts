@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
-    width: 95%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -44,5 +41,9 @@ export const Container = styled.section`
     & > span {
       font-size: 10pt;
     }
+  }
+
+  @media (min-width: 767px) {
+    width: 95%;
   }
 `;

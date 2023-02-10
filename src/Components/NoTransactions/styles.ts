@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 
 export const Container = styled.div`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
     width: 100%;
 
     display: flex;
@@ -15,22 +12,25 @@ export const Container = styled.div`
     gap: 0.5rem;
 
     & > h2 {
-      font-size: 14pt;
+      font-size: 11pt;
       font-weight: bold;
 
       text-align: left;
       color: ${(props) => props.theme.txtPrimary};
     }
   }
+
+  @media (min-width: 767px) {
+    & > h2 {
+      font-size: 14pt;
+    }
+  }
 `;
 
 export const BoxCard = styled(motion.div)`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
     width: 100%;
-    height: 5rem;
+    height: 4rem;
 
     display: flex;
     justify-content: flex-start;
@@ -82,5 +82,9 @@ export const BoxCard = styled(motion.div)`
         background-color: ${(props) => props.theme.lGray};
       }
     }
+  }
+
+  @media (min-width: 767px) {
+    height: 5rem;
   }
 `;

@@ -4,9 +4,15 @@ import * as B from "../../Blocks";
 
 import blackLogo from "../../Assets/Images/black-logo.png";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "../../Contexts";
+import { IoMdAddCircleOutline } from "react-icons/io";
+import { useState } from "react";
 
 export const DashboardPage = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const navigate = useNavigate();
+  const { widthScreen } = useMediaQuery();
 
   return (
     <S.Container>
@@ -19,7 +25,7 @@ export const DashboardPage = () => {
 
       <S.BoxBody>
         <S.BoxLeft>
-          <B.Form />
+          {widthScreen >= 767 && <B.Form />}
           <B.Description />
         </S.BoxLeft>
 
@@ -28,6 +34,10 @@ export const DashboardPage = () => {
           <B.Summary />
         </S.BoxRight>
       </S.BoxBody>
+
+      {widthScreen < 767 && (
+        <IoMdAddCircleOutline onClick={() => setIsOpen(true)} />
+      )}
     </S.Container>
   );
 };

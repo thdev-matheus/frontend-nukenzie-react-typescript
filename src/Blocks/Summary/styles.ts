@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
     width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.5rem;
 
     & > .filters {
       width: 100%;
@@ -22,14 +19,24 @@ export const Container = styled.section`
       gap: 0.5rem;
 
       & > span {
-        font-size: 12pt;
+        font-size: 11pt;
         font-weight: bold;
 
         color: ${(props) => props.theme.txtPrimary};
 
-        cursor: pointer;
-
         transition: 0.8s;
+      }
+    }
+  }
+
+  @media (min-width: 767px) {
+    gap: 1rem;
+
+    & > .filters {
+      & > span {
+        font-size: 12pt;
+
+        cursor: pointer;
 
         :hover {
           transform: scale(0.9);
@@ -83,11 +90,8 @@ export const Container = styled.section`
 
 export const BoxTransactions = styled.div`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
     width: 100%;
-    height: calc(100vh - 15.4rem);
+    height: calc(100vh - 18rem);
 
     display: flex;
     flex-direction: column;
@@ -106,6 +110,10 @@ export const BoxTransactions = styled.div`
     ::-webkit-scrollbar {
       display: none;
     }
+  }
+
+  @media (min-width: 767px) {
+    height: calc(100vh - 15.4rem);
   }
 
   @media (min-width: 1024px) {
