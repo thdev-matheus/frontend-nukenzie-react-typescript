@@ -19,6 +19,7 @@ export const NoTransactions = () => {
       },
     };
   };
+
   return (
     <S.Container>
       <h2>Você não possui nenhum lançamento</h2>

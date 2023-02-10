@@ -17,6 +17,8 @@ export const Container = styled.section`
     align-items: center;
 
     background-color: #fff;
+
+    overflow: hidden;
   }
 
   @media (min-width: 1440px) {
