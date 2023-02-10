@@ -38,6 +38,8 @@ export const Container = styled.form`
 
       animation-play-state: paused;
 
+      box-shadow: 1px 1px 3px 0 ${(props) => props.theme.bGray};
+
       :hover {
         animation-play-state: running;
       }

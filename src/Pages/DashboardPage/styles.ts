@@ -90,8 +90,6 @@ export const BoxBody = styled.div`
     align-items: center;
 
     padding-top: 2rem;
-
-    border: 1px solid cyan;
   }
 
   @media (min-width: 1440px) {
@@ -117,8 +115,6 @@ export const BoxLeft = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
-
-    border: 1px solid magenta;
   }
 
   @media (min-width: 1440px) {
