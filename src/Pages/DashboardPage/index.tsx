@@ -18,7 +18,10 @@ export const DashboardPage = () => {
           <B.Description />
         </S.BoxLeft>
 
-        <S.BoxRight></S.BoxRight>
+        <S.BoxRight>
+          <h2>Resumo financeiro:</h2>
+          <B.Summary />
+        </S.BoxRight>
       </S.BoxBody>
     </S.Container>
   );

@@ -135,7 +135,18 @@ export const BoxRight = styled.div`
     width: 50%;
     height: 100%;
 
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+
+    & > h2 {
+      font-size: 12pt;
+      font-weight: bold;
+
+      color: ${(props) => props.theme.txtPrimary};
+    }
   }
 
   @media (min-width: 1440px) {
