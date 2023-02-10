@@ -74,11 +74,9 @@ export const Summary = () => {
         <C.NoTransactions />
       ) : (
         <S.BoxTransactions>
-          <S.BoxCards>
-            {viewTransactions.map((t, i) => (
-              <C.TransactionCard key={t.id} transaction={t} delay={i / 10} />
-            ))}
-          </S.BoxCards>
+          {viewTransactions.map((t, i) => (
+            <C.TransactionCard key={t.id} transaction={t} delay={i / 10} />
+          ))}
         </S.BoxTransactions>
       )}
     </S.Container>

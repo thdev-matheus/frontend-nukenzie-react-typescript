@@ -5,6 +5,41 @@ export const Container = styled.section`
   }
 
   @media (min-width: 767px) {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+
+    & > .filters {
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+
+      & > span {
+        font-size: 12pt;
+        font-weight: bold;
+
+        color: ${(props) => props.theme.txtPrimary};
+
+        cursor: pointer;
+
+        transition: 0.8s;
+
+        :hover {
+          transform: scale(0.9);
+
+          transition: 0.8s;
+
+          color: ${(props) => props.theme.primary};
+        }
+      }
+    }
   }
 
   @media (min-width: 1024px) {
@@ -44,12 +79,6 @@ export const Container = styled.section`
       }
     }
   }
-
-  @media (min-width: 1440px) {
-  }
-
-  @media (min-width: 1900px) {
-  }
 `;
 
 export const BoxTransactions = styled.div`
@@ -57,35 +86,8 @@ export const BoxTransactions = styled.div`
   }
 
   @media (min-width: 767px) {
-  }
-
-  @media (min-width: 1024px) {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  @media (min-width: 1440px) {
-  }
-
-  @media (min-width: 1900px) {
-  }
-`;
-
-export const BoxCards = styled.div`
-  @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
-  }
-
-  @media (min-width: 1024px) {
-    width: 100%;
-    height: calc(100vh - 14rem);
+    height: calc(100vh - 15.4rem);
 
     display: flex;
     flex-direction: column;
@@ -93,7 +95,7 @@ export const BoxCards = styled.div`
     align-items: center;
     gap: 0.5rem;
 
-    padding: 1rem;
+    padding: 1rem 0.5rem;
 
     border-radius: 0.5rem;
 
@@ -106,9 +108,26 @@ export const BoxCards = styled.div`
     }
   }
 
-  @media (min-width: 1440px) {
-  }
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: calc(100vh - 14rem);
 
-  @media (min-width: 1900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 1rem 0.5rem;
+
+    border-radius: 0.5rem;
+
+    box-shadow: 2px 2px 5px 2px ${(props) => props.theme.bGray};
+
+    overflow: hidden auto;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
