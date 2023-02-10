@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# nuKenzie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## link 👇
 
-## Available Scripts
+https://nukenzie-kappa.vercel.app/
 
-In the project directory, you can run:
+<div style="display: inline_block"><br/>
+    <img align="center" alt="git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"/>
+    <img align="center" alt="github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+    <img align="center" alt="typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img align="center" alt="react.js" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+    <img align="center" alt="styled-components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>
+    <img align="center" alt="react-router" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"/>
+    <img align="center" alt="vscode" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
+</div>
+<br/>
+<br/>
+<div style="display: inline-block">
+    <img width="46%" src="https://i.ibb.co/qyK98mz/nukenzie1.png" alt="imagem">
+    <img width="46%" src="https://i.ibb.co/QXMHzmx/nukenzie4.png" alt="imagem">
+    <img width="46%" src="https://i.ibb.co/g9BBqpT/nukenzie8.png" alt="imagem">
+</div>
 
-### `npm start`
+<br/>
+<br/>
+<div style="display: inline-block">
+    <img width="20%" src="https://i.ibb.co/B6yrnRX/nukenzie2.png" alt="imagem">
+    <img width="20%" src="https://i.ibb.co/KDDR05n/nukenzie5.png" alt="imagem">
+    <img width="20%" src="https://i.ibb.co/P5p4pz0/nukenzie7.png" alt="imagem">
+    <img width="20%" src="https://i.ibb.co/Qn11K6X/nukenzie9.png" alt="imagem">
+</div>
+<br/>
+<br/>
+<div style="display: inline-block">
+    <img width="30%" src="https://i.ibb.co/PF8vy7k/nukenzie3.png" alt="imagem">
+    <img width="30%" src="https://i.ibb.co/5BVPQXS/nukenzie6.png" alt="imagem">
+    <img width="30%" src="https://i.ibb.co/wSRpVy3/nukenzie10.png" alt="imagem">
+</div>
+<br/>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Tenha maior gestão sobre os seus gastos e ganhos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br/>
 
-### `npm test`
+Refatoração da aplicação desenvolvida no 3º módulo do curso de desenvolvimento web full stack da Kenzie Academy Brasil para implementação de novas dependências como o Typescript, Styled Components, Framer Motion,etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Criador do projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto foi criado pela Kenzie Academy Brasil e executado por Matheus Vieira:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://veja.abril.com.br/wp-content/uploads/2019/12/1.jpg" width="100px;" alt="Foto da Kenzie"/><br>
+        <sub>
+          <b>Kenzie Academy Brasil</b>
+        </sub>
+    </td>
+    <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/109465340?v=4" width="100px;" alt="Foto do Theus no GitHub"/><br>
+        <sub>
+          <b>Matheus Vieira</b>
+        </sub>
+    </td>
+    
+  </tr>
+</table>
