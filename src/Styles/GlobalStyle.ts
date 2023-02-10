@@ -76,7 +76,7 @@ export const GloblaStyle = createGlobalStyle`
     }
   }
     
-    @keyframes bounce {
+  @keyframes bounce {
     0%,
     20%,
     50%,
@@ -89,6 +89,24 @@ export const GloblaStyle = createGlobalStyle`
     }
     60% {
       transform: translateY(-5px);
+    }
+  }
+
+  @keyframes shake {
+    15%, 19%, 23%, 27%, 31% {
+      transform: rotate(-15deg) scale(1.5);
+    }
+    
+    17%, 21%, 25%, 29% {
+      transform: rotate(15deg) scale(1.5);
+    }
+    
+    33% {
+      transform: rotate(0) scale(1.5);
+    }
+    
+    to {
+      transform: rotate(0) scale(1.5);
     }
   }
 `;

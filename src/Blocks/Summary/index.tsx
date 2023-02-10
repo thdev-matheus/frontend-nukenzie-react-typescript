@@ -9,7 +9,13 @@ export const Summary = () => {
 
   return (
     <S.Container>
-      {transactions.length === 0 ? <C.NoTransactions /> : <h1>tem</h1>}
+      {transactions.length === 0 ? (
+        <C.NoTransactions />
+      ) : (
+        transactions.map((t) => (
+          <C.TransactionCard transaction={t} key={t.id} />
+        ))
+      )}
     </S.Container>
   );
 };
