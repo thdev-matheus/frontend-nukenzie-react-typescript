@@ -90,7 +90,7 @@ export const Container = styled.section`
 
 export const BoxTransactions = styled.div`
   @media (min-width: 320px) {
-    width: 100%;
+    width: 99%;
     height: calc(100vh - 18rem);
 
     display: flex;
