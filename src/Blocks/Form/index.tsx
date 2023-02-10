@@ -28,6 +28,8 @@ export const Form = () => {
           options={options}
         />
       </div>
+
+      <C.Button>Inserir valor</C.Button>
     </S.Container>
   );
 };

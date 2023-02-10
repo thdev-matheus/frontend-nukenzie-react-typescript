@@ -21,7 +21,7 @@ export const Container = styled.div`
 
   & > .select-box {
     width: 100%;
-    height: 3.5rem;
+    height: 3rem;
 
     display: flex;
     justify-content: space-between;
@@ -65,6 +65,7 @@ export const BoxOptions = styled(motion.div)`
 
   position: absolute;
   bottom: -100px;
+  z-index: 5000;
 
   border-radius: 0.5rem;
   border: 1px solid ${(props) => props.theme.bGray};

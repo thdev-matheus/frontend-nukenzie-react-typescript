@@ -14,6 +14,7 @@ export const Container = styled.form`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 0.5rem;
 
     padding: 1rem;
 
@@ -28,6 +29,18 @@ export const Container = styled.form`
       justify-content: center;
       align-items: center;
       gap: 2rem;
+    }
+
+    & > button {
+      height: 3.5rem;
+
+      margin-top: 1rem;
+
+      animation-play-state: paused;
+
+      :hover {
+        animation-play-state: running;
+      }
     }
   }
 
