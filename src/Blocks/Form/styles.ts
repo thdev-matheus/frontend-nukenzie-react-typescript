@@ -2,13 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.form`
   @media (min-width: 320px) {
-  }
-
-  @media (min-width: 767px) {
-  }
-
-  @media (min-width: 1024px) {
-    width: 95%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -16,11 +10,7 @@ export const Container = styled.form`
     align-items: center;
     gap: 0.5rem;
 
-    padding: 1rem;
-
-    border-radius: 0.5rem;
-
-    box-shadow: 1px 1px 3px 0 ${(props) => props.theme.bGray};
+    padding: 0.5rem;
 
     & > .box-info {
       width: 100%;
@@ -46,9 +36,13 @@ export const Container = styled.form`
     }
   }
 
-  @media (min-width: 1440px) {
-  }
+  @media (min-width: 767px) {
+    width: 95%;
 
-  @media (min-width: 1900px) {
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+
+    box-shadow: 1px 1px 3px 0 ${(props) => props.theme.bGray};
   }
 `;

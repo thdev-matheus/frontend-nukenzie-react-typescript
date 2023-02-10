@@ -1,3 +1,4 @@
+import * as T from "./types";
 import * as C from "../../Components";
 import * as S from "./styles";
 import { v4 as uuidv4 } from "uuid";
@@ -5,7 +6,7 @@ import { FormEvent, useState } from "react";
 import { toast } from "react-toastify";
 import { useTransactions } from "../../Contexts";
 
-export const Form = () => {
+export const Form = ({ setIsOpen }: T.IFormProps) => {
   const [description, setDescription] = useState<string>("");
   const [value, setValue] = useState<string>("");
   const [activeOption, setActiveOption] = useState<"Entrada" | "Saída">(
@@ -44,6 +45,7 @@ export const Form = () => {
 
     addTransaction(transaction);
     resetEntry();
+    setIsOpen(false);
   };
 
   return (

@@ -13,4 +13,6 @@ export const lightTheme = {
   bGray: "#868e96",
   lGray: "#e9ecef",
   white: "#f8f9fa",
+
+  transparentBlack: "#21252985",
 };
