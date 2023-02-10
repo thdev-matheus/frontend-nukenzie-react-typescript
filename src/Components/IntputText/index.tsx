@@ -8,7 +8,7 @@ export const InputText = forwardRef<HTMLInputElement, T.IInputTextProps>(
       <S.Container>
         <span className="label">{label}</span>
         <input {...rest} ref={ref} />
-        <span className="helper-text">{helperText}</span>
+        {helperText && <span className="helper-text">{helperText}</span>}
       </S.Container>
     );
   }

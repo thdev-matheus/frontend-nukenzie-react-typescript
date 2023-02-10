@@ -55,6 +55,8 @@ export const BoxHeader = styled.header`
       width: 10%;
       height: 2.5rem;
 
+      box-shadow: 1px 1px 3px 0 ${(props) => props.theme.bGray};
+
       animation-name: grow-shrink;
       animation-timing-function: ease-in-out;
       animation-play-state: paused;

@@ -9,18 +9,20 @@ export const Container = styled.div`
   align-items: flex-start;
   gap: 0.5rem;
 
-  & > .label {
-    padding-left: 1rem;
-
+  & > span {
     font-size: 12pt;
     font-weight: bold;
 
     color: ${(props) => props.theme.txtPrimary};
   }
 
-  & > input {
+  & > .input-box {
     width: 100%;
     height: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     padding: 0 1rem;
 
@@ -28,21 +30,28 @@ export const Container = styled.div`
 
     box-shadow: 1px 1px 3px 0 ${(props) => props.theme.bGray};
 
-    font-size: 10pt;
-
-    color: ${(props) => props.theme.txtPrimary};
     background-color: ${(props) => props.theme.bgPrimary};
 
-    ::placeholder {
-      color: ${(props) => props.theme.bGray};
+    & > input {
+      color: ${(props) => props.theme.txtPrimary};
+      background-color: transparent;
+
+      font-size: 12pt;
+
+      ::placeholder {
+        color: ${(props) => props.theme.bGray};
+      }
+
+      ::-webkit-inner-spin-button {
+        display: none;
+      }
     }
-  }
 
-  & > .helper-text {
-    padding-left: 1rem;
+    & > span {
+      font-size: 16pt;
+      font-weight: bold;
 
-    font-size: 10pt;
-
-    color: ${(props) => props.theme.bGray};
+      color: ${(props) => props.theme.txtPrimary};
+    }
   }
 `;
