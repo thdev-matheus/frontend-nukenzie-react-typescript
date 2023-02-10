@@ -109,25 +109,6 @@ export const BoxTransactions = styled.div`
   }
 
   @media (min-width: 1024px) {
-    width: 100%;
     height: calc(100vh - 14rem);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-
-    padding: 1rem 0.5rem;
-
-    border-radius: 0.5rem;
-
-    box-shadow: 2px 2px 5px 2px ${(props) => props.theme.bGray};
-
-    overflow: hidden auto;
-
-    ::-webkit-scrollbar {
-      display: none;
-    }
   }
 `;
