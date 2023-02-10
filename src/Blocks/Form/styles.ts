@@ -20,6 +20,15 @@ export const Container = styled.form`
     border-radius: 0.5rem;
 
     box-shadow: 1px 1px 3px 0 ${(props) => props.theme.bGray};
+
+    & > .box-info {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   @media (min-width: 1440px) {

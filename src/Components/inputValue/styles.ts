@@ -10,6 +10,7 @@ export const Container = styled.div`
   gap: 0.5rem;
 
   & > span {
+    padding-left: 1rem;
     font-size: 12pt;
     font-weight: bold;
 
@@ -23,6 +24,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 
     padding: 0 1rem;
 
@@ -33,6 +35,7 @@ export const Container = styled.div`
     background-color: ${(props) => props.theme.bgPrimary};
 
     & > input {
+      width: 80%;
       color: ${(props) => props.theme.txtPrimary};
       background-color: transparent;
 
