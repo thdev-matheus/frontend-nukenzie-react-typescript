@@ -12,7 +12,7 @@ export const Form = () => {
     "Entrada"
   );
 
-  const { addTransaction, transactions } = useTransactions();
+  const { addTransaction } = useTransactions();
 
   const options: ("Entrada" | "Saída")[] = ["Entrada", "Saída"];
 
