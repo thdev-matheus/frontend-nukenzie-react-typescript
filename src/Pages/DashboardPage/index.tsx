@@ -15,29 +15,36 @@ export const DashboardPage = () => {
   const { widthScreen } = useMediaQuery();
 
   return (
-    <S.Container>
-      <S.BoxHeader>
-        <img src={blackLogo} alt="logo" />
-        <C.Button primary={false} onClick={() => navigate("/")}>
-          Inicio
-        </C.Button>
-      </S.BoxHeader>
-
-      <S.BoxBody>
-        <S.BoxLeft>
-          {widthScreen >= 767 && <B.Form />}
-          <B.Description />
-        </S.BoxLeft>
-
-        <S.BoxRight>
-          <h2>Resumo financeiro:</h2>
-          <B.Summary />
-        </S.BoxRight>
-      </S.BoxBody>
-
-      {widthScreen < 767 && (
-        <IoMdAddCircleOutline onClick={() => setIsOpen(true)} />
+    <>
+      {isOpen && (
+        <C.BottomBar setIsOpen={setIsOpen}>
+          <B.Form setIsOpen={setIsOpen} />
+        </C.BottomBar>
       )}
-    </S.Container>
+      <S.Container>
+        <S.BoxHeader>
+          <img src={blackLogo} alt="logo" />
+          <C.Button primary={false} onClick={() => navigate("/")}>
+            Inicio
+          </C.Button>
+        </S.BoxHeader>
+
+        <S.BoxBody>
+          <S.BoxLeft>
+            {widthScreen >= 767 && <B.Form setIsOpen={setIsOpen} />}
+            <B.Description />
+          </S.BoxLeft>
+
+          <S.BoxRight>
+            <h2>Resumo financeiro:</h2>
+            <B.Summary />
+          </S.BoxRight>
+        </S.BoxBody>
+
+        {widthScreen < 767 && (
+          <IoMdAddCircleOutline onClick={() => setIsOpen(true)} />
+        )}
+      </S.Container>
+    </>
   );
 };

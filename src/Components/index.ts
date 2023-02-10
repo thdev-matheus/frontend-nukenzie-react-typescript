@@ -5,6 +5,7 @@ import { InputValue } from "./inputValue";
 import { SelectType } from "./SelectType";
 import { NoTransactions } from "./NoTransactions";
 import { TransactionCard } from "./TransactionCard";
+import { BottomBar } from "./BottomBar";
 
 export {
   HomeImg,
@@ -14,4 +15,5 @@ export {
   SelectType,
   NoTransactions,
   TransactionCard,
+  BottomBar,
 };
