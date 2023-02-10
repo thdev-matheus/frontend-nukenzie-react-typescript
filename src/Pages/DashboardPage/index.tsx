@@ -15,7 +15,7 @@ export const DashboardPage = () => {
       <S.BoxBody>
         <S.BoxLeft>
           <B.Form />
-          {/* Total */}
+          <B.Description />
         </S.BoxLeft>
 
         <S.BoxRight></S.BoxRight>

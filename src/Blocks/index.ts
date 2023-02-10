@@ -1,3 +1,4 @@
 import { Form } from "./Form";
+import { Description } from "./Description";
 
-export { Form };
+export { Form, Description };
